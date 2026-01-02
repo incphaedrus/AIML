@@ -40,8 +40,8 @@ def generate_response(question,api_key,llm, temperature, max_tokens):
     answer = chain.invoke({"question": question})   
     return answer 
 
- ## Streamlit app
- ## --------------------------------------------------------------------------------##
+## Streamlit app
+## --------------------------------------------------------------------------------##
 st.title("Chat Application with LLMs")  
 api_key = st.text_input("Enter your OpenAI API Key:", type="password")
 
